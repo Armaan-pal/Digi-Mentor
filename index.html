@@ -20,22 +20,22 @@
 
     <div class="digi_whole">
 
-        <div class="digimenu">
-            <!-- <div class="sitelogo">
+        <div class="digimenu page-width">
+            <div class="sitelogo">
                 <img src="Assets/site-logo.png">
-            </div> -->
+            </div>
             <div class="digioptions">
                 <a href="">About</a>
                 <a href="">Upskill Your Team</a>
-                <div class="mob_optns">
+                <!-- <div class="mob_optns">
                     <img src="Assets/" alt="menu">
-                </div>
+                </div> -->
             </div>
         </div>
 
 
         <!-- top-banner -->
-        <div class="swiper mySwiper swipe_style">
+        <div class="swiper mySwiper swipe_style page-width">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide slide_style">
@@ -50,7 +50,14 @@
                                 consequuntur quidem corrupti minima ipsa quae repellat velit veritatis!
                             </div>
                         </div>
+                        <div class="swipe_btn">
 
+                            <div class="bannre_txt-btn bgcollght">Explore Program</div>
+
+
+                            <div class="bannre_txt-btn bgcolorng">Book a Free Demo</div>
+
+                        </div>
                     </div>
                     <div class="swipe_right_head">
                         <img src="Assets/banner.jpg" alt="banner">
@@ -71,10 +78,14 @@
                                 corporis dolorum!
                             </div>
                         </div>
-                        <!-- <div class="swipe_btn">
-                        <button class="swipe_program">Explore Program</button>
-                        <button class="siwpe_demo">Book Demo</button>
-                    </div> -->
+                        <div class="swipe_btn">
+
+                            <div class="bannre_txt-btn bgcollght">Explore Program</div>
+
+
+                            <div class="bannre_txt-btn bgcolorng">Book a Free Demo</div>
+
+                        </div>
                     </div>
                     <div class="swipe_right_head">
                         <img src="Assets/banner.jpg" alt="banner">
@@ -88,10 +99,10 @@
                             <p>Top Agency-Based</p><span>Digital Marketing</span>
                             <p>Traning institute</p>
                         </div>
-                        <!-- <div class="swipe_btn">
-                        <button class="swipe_program">Explore Program</button>
-                        <button class="siwpe_demo">Book Demo</button>
-                    </div> -->
+                        <div class="swipe_btn">
+                            <div class="bannre_txt-btn bgcollght">Explore Program</div>
+                            <div class="bannre_txt-btn bgcolorng">Book a Free Demo</div>
+                        </div>
                     </div>
                     <div class="swipe_right_head">
                         <img src="Assets/banner.jpg" alt="banner">
@@ -102,7 +113,7 @@
         </div>
 
         <!-- flip cards -->
-        <div class="crdsec_btn">
+        <div class="crdsec_btn page-width">
             <div class="card_and_heading">
                 <div class="secard_head">
                     <h2>Who should take this course</h2>
@@ -176,7 +187,7 @@
         </div>
 
         <!-- Why choose digimentor -->
-        <div class="whydigimentor">
+        <div class="whydigimentor page-width">
             <div class="digimentor_head">
                 <h2>Why Choose Digimentor</h2>
                 <h3>Your path to Digital mastery Starts Here At Digi Mentor. We believe in nurturing skilled digital
@@ -237,9 +248,28 @@
         </div>
 
         <!-- Explore the programe -->
-        <div class="explore_program behnd_scnc_sctn">
+        <div class="explore_program behnd_scnc_sctn page-width">
             <div class=" prcnt_card_card-heading">
                 <div class="prcnt_card_star">
+                    <div class="icontxt">
+                        
+                    <div class="greenicon">
+                        <div class="greenlogo"><img src="Assets/star.png" alt="medal"></div>
+                        <div class="medaltxt">
+                            <h3>TrustPilot</h3>
+                            <p>Rated 4.7/5 (4192)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="googleicon">
+                        <div class="googleiconlogo"><img src="Assets/google.png" alt="medal"></div>
+                        <div class="googleicontxt">
+                            <h3>Google Reviews</h3>
+                            <p>Rated 4.6/5 (3500+)</p>
+                        </div>
+                    </div>
+                </div>
+                    <span></span>
                 </div>
 
                 <div class="exlore_card_box">
@@ -680,51 +710,51 @@
     </script>
 
     <script>
-const speed = 100;
+        const speed = 100;
 
-function incrementCounters(counter) {
-    const updateCount = () => {
-        const target = parseInt(counter.getAttribute("data-target"));
-        const count = parseInt(counter.innerText);
-        const increment = Math.ceil(target / speed);
+        function incrementCounters(counter) {
+            const updateCount = () => {
+                const target = parseInt(counter.getAttribute("data-target"));
+                const count = parseInt(counter.innerText);
+                const increment = Math.ceil(target / speed);
 
-        if (count < target) {
-            counter.innerText = count + increment > target ? target : count + increment;
-            setTimeout(updateCount, 10);
-        } else {
-            counter.innerText = target;
+                if (count < target) {
+                    counter.innerText = count + increment > target ? target : count + increment;
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
         }
-    };
-    updateCount();
-}
 
-function checkIfInView() {
-    const element = document.querySelector('.behnd_scnc_sctn');
-    if (!element) return; // Early return if the element is not found
+        function checkIfInView() {
+            const element = document.querySelector('.behnd_scnc_sctn');
+            if (!element) return; // Early return if the element is not found
 
-    const oTop = element.getBoundingClientRect().top;
-    if (oTop <= window.innerHeight) {
-        const counters = document.querySelectorAll('.count');
-        counters.forEach(incrementCounters);
-        // Remove observer since it's not needed anymore
-        observer.unobserve(element);
-    }
-}
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            checkIfInView();
-            observer.unobserve(entry.target);
+            const oTop = element.getBoundingClientRect().top;
+            if (oTop <= window.innerHeight) {
+                const counters = document.querySelectorAll('.count');
+                counters.forEach(incrementCounters);
+                // Remove observer since it's not needed anymore
+                observer.unobserve(element);
+            }
         }
-    });
-}, { threshold: 0.5 }); // Adjust threshold as needed
 
-// Observe the target section
-const targetSection = document.querySelector('.behnd_scnc_sctn');
-if (targetSection) {
-    observer.observe(targetSection);
-}
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    checkIfInView();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 }); // Adjust threshold as needed
+
+        // Observe the target section
+        const targetSection = document.querySelector('.behnd_scnc_sctn');
+        if (targetSection) {
+            observer.observe(targetSection);
+        }
     </script>
     <script src="custom_element.js"></script>
 

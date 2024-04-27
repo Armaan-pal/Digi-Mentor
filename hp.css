@@ -1,0 +1,763 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* head-css */
+
+.digimenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0px;
+}
+
+.digioptions{
+    display: flex;
+    gap: 13px;
+}
+
+/* foot-css */
+
+.footer {
+    background: #10182F;
+    background: #000;
+} 
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+    padding: 0 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #F26231;
+    margin-bottom: 0;
+
+}
+
+.footer_col_frsthdng{
+    padding: 0 !important;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    margin: 20px 0 30px 0;
+    color: #bfbfbf;
+    font-size: 9px;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+/* banner */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide_style {
+    display: flex;
+}
+
+.swipe_left_head,
+.swipe_right_head {
+    width: 50%;
+}
+
+.head_pd p {
+    color: #3d4e81;
+    font-size: 49px;
+}
+
+.head_pd span {
+    color: #F26231;
+    font-size: 49px;
+    font-weight: 600;
+}
+
+.head_pd {
+    text-align: left;
+}
+
+.swipe_style {
+    padding: 3.421vw 4.211vw;
+}
+
+.swipe_left_head {
+    display: flex;
+    justify-content: right;
+}
+
+.head_pd p {
+    margin: 0
+}
+
+.pd_para {
+    font-size: 16px;
+    color: #4b4b4b;
+    font-size: 16px;
+    color: #4b4b4b;
+    width: 500px;
+    margin: 35px 0;
+    line-height: 23px;
+    word-spacing: 3px;
+}
+
+.pd_bold {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* flip card */
+
+.front_card {
+    background-color: transparent;
+    width: 12.105vw;
+    height: 11.053vw;
+    perspective: 1000px;
+    border: 3px solid #3d4e81;
+    border-radius: 6px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.front_card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+}
+
+.flip-card-front p {
+    color: #F26231;
+    font-size: 1.211vw;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.card_box {
+    display: flex;
+    justify-content: center;
+    gap: 2.158vw;
+    margin: 3.579vw 0;
+}
+
+.secard_head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.842vw;
+}
+
+.secard_head h2,
+.secard_head h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.secard_head h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.secard_head h2 {
+    font-size: 2.1vw;
+    font-weight: 400;
+}
+
+.crdsec_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    padding: 3.421vw 4.211vw;
+}
+
+.btnstyle {
+    box-shadow: inset 0px 1px 3px #707070;
+    height: 2.579vw;
+    width: 7vw;
+    color: #fff;
+    background-color: #F26231;
+    border: white solid 3px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+/* digimentor */
+
+.digimentor_card {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    column-gap: 3.316vw;
+    row-gap: 4.6vw;
+    margin: 4.3vw 0px;
+}
+
+.digimentor_head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.842vw;
+}
+
+.digimentor_head h2,
+.digimentor_head h3 {
+    margin: 0;
+
+}
+
+.digimentor_head h2 {
+    font-size: 2.1vw;
+    color: #3D68B2;
+    font-weight: 400;
+}
+
+.digimentor_head h3 {
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sec_divide {
+    background: #707070;
+    width: 100%;
+    display: block;
+    height: 2px;
+}
+
+.card_text h2 {
+    margin: 0 0 1px 0;
+    padding: 0px 23px 3px 23px;
+    color: #F26231;
+}
+
+.card_text p {
+    padding: 0px 23px;
+    color: #4B4B4B;
+    font-size: 16px;
+    line-height: 21px;
+    word-spacing: 3px;
+}
+
+.whydigimentor {
+    padding: 3.421vw 4.211vw;
+}
+
+.txtbtndc {
+    box-shadow: inset 0px 3px 3px #707070, 0px 3px 6px #707070;
+    height: 3.579vw;
+    width: auto;
+    padding: 1px 13px;
+    color: #fff;
+    background-color: #3D68B2;
+    border: white solid 3px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.card_why-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* explore programe */
+
+.percent_head p {
+    margin: 0;
+    color: #000;
+}
+
+.prcnt_card {
+    box-shadow: 6px 6px 1px #3d68b2;
+    border-radius: 3px;
+    padding: 29px 29px;
+    background-color: #fff;
+}
+
+.explore_program {
+    background-color: #000;
+    padding: 3.421vw 4.211vw;
+}
+
+.exlore_card_box {
+    display: flex;
+    justify-content: center;
+    gap: 2.158vw;
+    padding: 0 0 2.579vw 0;
+}
+
+.percent_heading {
+    font-size: 1.15vw;
+    color: #3d68b2;
+    font-weight: 600;
+}
+
+.percent_head p {
+    color: #F26231;
+    font-weight: bold;
+    font-size: 3.818vw;
+}
+
+.crd_prcnt_para {
+    line-height: 19px;
+}
+
+.subtxt_prcnt {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.explore_card {
+    color: #fff;
+    background: #3d68b2;
+    gap: 19px;
+    display: flex;
+    padding: 1.152vw;
+    border-radius: 9px;
+}
+
+.explore_card span {
+    margin-top: 13.939vw;
+    font-size: 16px;
+}
+
+.explore_card h2 {
+    text-align: left;
+    font-size: 33px;
+    margin: 0;
+}
+
+.crd_img {
+    margin-bottom: 13px;
+    width: 103px;
+    height: auto;
+}
+
+/* .crd_img img{
+    width:100%;
+    height: auto;
+} */
+.program_subsection-head {
+    color: #fff;
+    font-size: 2.061vw;
+    font-weight: 400;
+    text-align: center;
+    margin: 2.97vw;
+}
+
+.program_subsection {
+    text-align: center;
+}
+
+.program_card {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* corporate */
+
+.confused {
+    display: flex;
+    background: #F26231;
+    align-items: center;
+    justify-content: center;
+    gap: 116px;
+}
+
+.hdng_span {
+    display: flex;
+    color: #fff;
+    padding: 3.636vw 0px;
+    align-items: center;
+}
+
+.hdng_span span {
+    background: #fff;
+    height: 28px;
+    width: 3px;
+    margin: 0 23px;
+}
+
+.hdng_span h2,
+.hdng_span p {
+    margin: 0;
+}
+
+.confused_lnk {
+    box-shadow: inset 0px 3px 3px #707070, 0px 3px 6px #707070;
+    height: auto;
+    width: auto;
+    padding: 6px 13px;
+    color: #fff;
+    background-color: #3D68B2;
+    border: white solid 3px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+.temp-col {
+    grid-template-columns: repeat(7, 1fr) !important;
+}
+
+.logo {
+    text-align: center;
+    padding: 3.421vw 4.211vw;
+}
+
+.logo_box {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+    margin: 23px 0px;
+}
+
+.hdng_span h2 {
+    font-size: 2.1vw;
+    font-weight: 400;
+}
+
+.logo h2 {
+    font-size: 2.1vw;
+    font-weight: 400;
+    color: #3d68b2;
+    padding-bottom: 19px;
+}
+
+.scnd_sld_mrgn{
+    margin: 43px 0;
+}
+
+
+@media(max-width:768px) {
+    .confused{
+        gap: 19px;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .card_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+        margin: 33px 0px;
+    }
+
+    .front_card {
+        width: 100%;
+    }
+
+    .flip-card-front p {
+        font-size: 19px;
+    }
+
+    .hdng_span p{
+        font-size: 13px;
+    }
+    .confused_lnk {
+        font-size:13px
+    }
+    .hdng_span span{
+        margin: 0 13px;
+    }
+
+    .front_card {
+        height: 213px;
+    }
+
+    .btnstyle {
+        font-size: 19px;
+        padding: 9px;
+        width: 96px;
+    }
+
+    .hdng_span{
+        padding: 0;
+    }
+
+    .hdng_span h2{
+        font-size: 19px;
+    }
+
+    .secard_head h2,
+    .secard_head h3 {
+        text-align: center;
+    }
+
+    .secard_head h2 {
+        font-size: 23px;
+    }
+
+    .secard_head h3 {
+        font-size: 13px;
+    }
+
+    .crdsec_btn {
+        padding: 23px 36px;
+    }
+
+    .secard_head {
+        gap: 16px;
+    }
+
+    /* digimentor card */
+
+    .digimentor_card {
+        grid-template-columns: 1fr;
+        margin: 23px 1px;
+    }
+
+    .card_text h2 {
+        font-size: 18px;
+        padding: 0px 23px 6px 23px;
+    }
+
+    .digimentor_head h3 {
+        font-size: 13px;
+    }
+
+    .card_text p {
+        font-size: 13px;
+    }
+
+    .digimentor_head {
+        gap: 16px;
+    }
+
+    .txtbtndc {
+        width: auto;
+        font-size: 19px;
+        padding: 9px;
+    }
+
+    .digimentor_head h2 {
+        font-size: 29px;
+    }
+
+    .whydigimentor{
+        padding: 30px;
+    }
+
+    /* foot-style */
+
+    .para_and_ttl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .footer-col form {
+        display: block;
+    }
+
+    .footer-col form :where(input, button) {
+        width: 100%;
+    }
+
+    .footer-col form button {
+        margin: 10px 0 0 0;
+    }
+
+    .exlore_card_box{
+        display: block;
+    }
+
+    .program_card{
+        flex-wrap: wrap;
+        gap: 33px;
+    }
+
+    .percent_head p{
+        font-size: 33px; 
+    }
+    .percent_heading {
+        font-size: 9px;
+    }
+    .crd_prcnt_para{
+        font-size: 13px;
+    }
+    .prcnt_card{
+        padding: 13px;
+        margin-bottom: 23px;
+    }
+    .crd_img {
+        margin-bottom: 6px;
+    }
+    .subtxt_prcnt {
+        gap: 3px;
+    }
+    .explore_program {
+        padding: 30px;
+    }
+    .head_pd p {
+        font-size: 19px;
+    }
+
+    .head_pd span{
+        font-size: 20px;
+    }
+    .pd_para{
+        line-height: unset;
+        word-spacing: unset;
+        width: auto;
+        font-size: 9px;
+    }
+
+    .explore_card h2{
+        font-size:19px ;
+    }
+
+    .program_subsection-head{
+        font-size: 19px;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .explore_card span {
+        font-size: 13px;
+        margin-top: 183px;
+    }
+
+    .explore_card{
+        gap: 89px;
+        padding: 19px;
+    }
+}

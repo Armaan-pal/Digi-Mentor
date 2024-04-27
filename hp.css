@@ -907,4 +907,8 @@ body {
         margin: 33px 0;
         width: 93%;
     }
+
+    .swipe_style{
+        padding: 0 !important;
+    }
 }

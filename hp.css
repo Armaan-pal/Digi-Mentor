@@ -1,10 +1,54 @@
 body {
     font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
-.page-width{
+.page-width {
     padding: 80px 80px;
 }
+
+.explore_card{
+
+    /* background:-webkit-linear-gradient(top,rgba(255,255,255,0.1),transparent);
+    box-shadow: inset 5px 5px 20px rgba(255,255,255,0.1); */
+    -webkit-animation: shimmy 3s ease-in-out infinite;
+    overflow: hidden;
+  }
+
+@-webkit-keyframes shimmy {
+
+    0%,
+    100% {
+        transform: rotateY(0deg) skewX(0deg);
+    }
+
+    50% {
+        transform: rotateY(36deg) skewX(9deg);
+    }
+}
+
+.shine {
+    width: 433px;
+    height: 68px;
+    margin-left: -71px;
+    transform: rotate(30deg);
+    background: -webkit-linear-gradient(top, transparent, rgba(200, 200, 200, 0.1), transparent);
+    position: absolute;
+    -webkit-animation: shine 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes shine {
+
+    0%, 100% {
+        margin-top: -183px;
+    }
+
+    50% {
+        margin-top: 303px;
+    }
+}
+
+
 /* head-css */
 
 .digimenu {
@@ -13,7 +57,7 @@ body {
     padding: 26px 0px;
 }
 
-.digioptions{
+.digioptions {
     display: flex;
     gap: 13px;
 }
@@ -23,7 +67,7 @@ body {
 .footer {
     background: #10182F;
     background: #000;
-} 
+}
 
 .footer .footer-row {
     display: flex;
@@ -42,7 +86,7 @@ body {
 
 }
 
-.footer_col_frsthdng{
+.footer_col_frsthdng {
     padding: 0 !important;
 }
 
@@ -140,24 +184,25 @@ body {
     object-fit: cover;
 }
 
-.swipe_btn{
+.swipe_btn {
     display: flex;
     align-items: center;
 }
 
-.bgcollght{
+.bgcollght {
     background-color: #3D68B2;
 }
 
-.bgcolorng{
+.bgcolorng {
     margin-left: 39px;
     background-color: #F26231;
 }
 
-.bannre_txt-btn{box-shadow: inset 0px 3px 3px #707070, 0px 3px 6px #707070;
-    height: 3.579vw;
+.bannre_txt-btn {
+    box-shadow: inset 0px 3px 3px #707070, 0px 3px 6px #707070;
+    height: auto;
     width: auto;
-    padding: 1px 13px;
+    padding: 13px 19px;
     font-weight: 600;
     color: #fff;
     border: white solid 3px;
@@ -166,7 +211,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px}
+    font-size: 15px
+}
 
 .slide_style {
     display: flex;
@@ -197,6 +243,7 @@ body {
 } */
 
 .swipe_left_head {
+    padding: 80px 0px 80px 36px;
     display: flex;
     justify-content: right;
     flex-direction: column;
@@ -275,7 +322,7 @@ body {
     align-items: center;
 }
 
-.flip-card-back{
+.flip-card-back {
     font-size: 1.212vw;
 }
 
@@ -321,9 +368,10 @@ body {
 
 .btnstyle {
     box-shadow: inset 0px 1px 3px #707070;
-    height: 2.579vw;
+    height: auto;
     text-align: center;
-    width: 7vw;
+    width: auto;
+    padding: 13px 19px;
     color: #fff;
     background-color: #F26231;
     border: white solid 3px;
@@ -391,9 +439,11 @@ body {
     word-spacing: 3px;
 }
 
-.greenlogo{width: auto;}
+.greenlogo {
+    width: auto;
+}
 
-.greenicon{
+.greenicon {
     display: flex;
     align-items: center;
 }
@@ -402,51 +452,57 @@ body {
     padding: 3.421vw 4.211vw;
 } */
 
-.medaltxt, .googleicontxt{
+.medaltxt,
+.googleicontxt {
     color: #fff;
     margin-left: 13px;
 }
 
-.medaltxt p, .medaltxt h3{
+.medaltxt p,
+.medaltxt h3 {
     margin: 0;
 }
 
-.medaltxt h3, .googleicontxt h3{
+.medaltxt h3,
+.googleicontxt h3 {
     font-size: 20px;
 }
-.googleicontxt h3, .googleicontxt p{
+
+.googleicontxt h3,
+.googleicontxt p {
     margin-top: 9px;
     margin: 0;
 }
 
-.googleicontxt p{
+.googleicontxt p {
     font-size: 30px;
     color: #cfcb13;
     margin-top: 9px;
     font-weight: 600
 }
 
-.prcnt_card_star .icontxt{
+.prcnt_card_star .icontxt {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 133px;
 }
-.medaltxt p{
+
+.medaltxt p {
     font-size: 30px;
     color: #80cf80;
     margin-top: 9px;
     font-weight: 600;
 }
 
-.prcnt_card_star{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+.prcnt_card_star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.prcnt_card_star span{
+.prcnt_card_star span {
     background: #707070;
     width: 83%;
     height: 1px;
@@ -454,16 +510,16 @@ body {
 }
 
 
-.googleicon{
+.googleicon {
     display: flex;
     align-items: center;
 }
 
 .txtbtndc {
     box-shadow: inset 0px 3px 3px #707070, 0px 3px 6px #707070;
-    height: 3.579vw;
+    height: auto;
     width: auto;
-    padding: 1px 13px;
+    padding: 13px 19px;
     color: #fff;
     background-color: #3D68B2;
     border: white solid 3px;
@@ -473,6 +529,14 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 0.909vw;
+    gap: 13px;
+}
+
+.btnstyle,
+.txtbtndc,
+.confused_lnk,
+.bannre_txt-btn {
+    gap: 13px;
 }
 
 .card_why-btn {
@@ -513,7 +577,7 @@ body {
     font-weight: 600;
 }
 
-.crd_prcnt_para p{
+.crd_prcnt_para p {
     font-size: 0.97vw;
 }
 
@@ -540,6 +604,7 @@ body {
     display: flex;
     padding: 1.152vw;
     border-radius: 9px;
+    position: relative;
 }
 
 .explore_card span {
@@ -614,7 +679,7 @@ body {
     box-shadow: inset 0px 3px 3px #707070, 0px 3px 6px #707070;
     height: auto;
     width: auto;
-    padding: 6px 13px;
+    padding: 13px 19px;
     color: #fff;
     background-color: #3D68B2;
     border: white solid 3px;
@@ -657,31 +722,34 @@ body {
     margin: 0;
 }
 
-.scnd_sld_mrgn{
+.scnd_sld_mrgn {
     margin: 43px 0;
 }
 
 
 
-.greenlogo img, .googleicon img{
+.greenlogo img,
+.googleicon img {
     width: 100%;
     height: auto;
 }
 
 @media(max-width:768px) {
 
-    .page-width{
+    .page-width {
         padding: 33px;
     }
 
-    .bannre_txt-btn{
+    .bannre_txt-btn {
         display: none;
     }
-    .confused{
+
+    .confused {
         gap: 19px;
         flex-direction: column;
         padding: 30px 0px;
     }
+
     .card_box {
         flex-direction: column;
         align-items: center;
@@ -697,14 +765,18 @@ body {
         font-size: 19px;
     }
 
-    .hdng_span p{
+    .hdng_span p {
         font-size: 13px;
     }
+
     .confused_lnk {
-        font-size:13px
+        font-size: 13px
     }
-    .hdng_span span{
-        margin: 0 13px;
+
+    .hdng_span span {
+        margin: 0 9px;
+        height: 23px;
+        width: 2px;
     }
 
     .front_card {
@@ -712,16 +784,16 @@ body {
     }
 
     .btnstyle {
-        font-size: 19px;
+        font-size: 13px;
         padding: 9px;
         width: 96px;
     }
 
-    .hdng_span{
+    .hdng_span {
         padding: 0;
     }
 
-    .hdng_span h2{
+    .hdng_span h2 {
         font-size: 19px;
     }
 
@@ -773,7 +845,7 @@ body {
 
     .txtbtndc {
         width: auto;
-        font-size: 19px;
+        font-size: 13px;
         padding: 9px;
     }
 
@@ -781,13 +853,13 @@ body {
         font-size: 29px;
     }
 
-    .whydigimentor{
+    .whydigimentor {
         /* padding: 30px; */
     }
 
     /* foot-style */
 
-    .para_and_ttl{
+    .para_and_ttl {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -821,59 +893,70 @@ body {
         margin: 10px 0 0 0;
     }
 
-    .exlore_card_box{
+    .exlore_card_box {
         display: block;
+        padding-bottom: 0;
     }
 
-    .program_card{
+    .program_card {
         flex-wrap: wrap;
         gap: 33px;
     }
 
-    .percent_head p{
-        font-size: 39px; 
+    .percent_head p {
+        font-size: 39px;
     }
-    .percent_heading, .crd_prcnt_para p {
+
+    .percent_heading,
+    .crd_prcnt_para p {
         font-size: 13px;
     }
-    .crd_prcnt_para{
+
+    .crd_prcnt_para {
         font-size: 13px;
     }
-    .prcnt_card{
+
+    .prcnt_card {
         padding: 13px;
-        margin-bottom: 23px;
+        margin-bottom: 33px;
     }
+
     .crd_img {
         margin-bottom: 6px;
     }
+
     .subtxt_prcnt {
         gap: 3px;
     }
+
     .explore_program {
         /* padding: 30px; */
     }
+
     .head_pd p {
         font-size: 19px;
     }
 
-    .head_pd span{
+    .head_pd span {
         font-size: 20px;
     }
-    .pd_para{
+
+    .pd_para {
         line-height: unset;
         word-spacing: unset;
         width: auto;
         font-size: 9px;
     }
 
-    .explore_card h2{
-        font-size:19px ;
+    .explore_card h2 {
+        font-size: 19px;
     }
 
-    .program_subsection-head{
+    .program_subsection-head {
         font-size: 19px;
         text-align: center;
         margin: 30px;
+        margin-bottom: 23px;
     }
 
     .explore_card span {
@@ -881,25 +964,28 @@ body {
         margin-top: 183px;
     }
 
-    .explore_card{
+    .explore_card {
         gap: 89px;
         padding: 19px;
     }
 
-    .greenlogo, .googleiconlogo{
+    .greenlogo,
+    .googleiconlogo {
         width: 63px;
     }
 
-    .prcnt_card_star .icontxt{
+    .prcnt_card_star .icontxt {
         gap: 13px;
     }
 
-    .medaltxt p, .googleicontxt p{
+    .medaltxt p,
+    .googleicontxt p {
         font-size: 13px;
         margin-top: 6px;
     }
 
-    .medaltxt h3, .googleicontxt h3 {
+    .medaltxt h3,
+    .googleicontxt h3 {
         font-size: 9px;
     }
 
@@ -908,7 +994,7 @@ body {
         width: 93%;
     }
 
-    .swipe_style{
+    .swipe_style {
         padding: 0 !important;
     }
 }

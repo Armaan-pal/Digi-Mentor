@@ -331,7 +331,7 @@ body {
     gap: 56px;
     /* justify-content: center;
     gap: 2.158vw; */
-    margin: 3.579vw 0;
+    margin: 4.379vw 0;
 }
 
 .secard_head {
@@ -535,7 +535,8 @@ body {
 .btnstyle,
 .txtbtndc,
 .confused_lnk,
-.bannre_txt-btn {
+.bannre_txt-btn,
+.videotxt_btn {
     gap: 13px;
 }
 
@@ -665,7 +666,7 @@ body {
 
 .hdng_span span {
     background: #fff;
-    height: 28px;
+    height: 39px;
     width: 3px;
     margin: 0 23px;
 }
@@ -673,6 +674,14 @@ body {
 .hdng_span h2,
 .hdng_span p {
     margin: 0;
+}
+
+.hdng_span h2
+{
+    font-size: 41px;
+}
+.hdng_span p{
+    font-size: 30px;
 }
 
 .confused_lnk {
@@ -732,6 +741,97 @@ body {
 .googleicon img {
     width: 100%;
     height: auto;
+}
+
+
+/* hear it */
+
+.videotxt{
+    background: #101010;
+}
+
+.opensrc{
+    width: 270px;
+    /* height: 663px;  */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.opensrc video{
+    width: 100%;
+    height: auto;
+}
+
+.videotxt .sec-style{
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    height: auto;
+    margin: 4.3vw 0;
+    margin-bottom: 6.3vw;
+}
+
+.videotxt_btn{
+    box-shadow: inset 0px 1px 3px #707070;
+    height: auto;
+    text-align: center;
+    place-self: center;
+    width: max-content;
+    padding: 13px 19px;
+    color: #fff;
+    background-color: #F26231;
+    border: white solid 3px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.909vw;
+}
+
+.videotxt{
+    display: flex;
+    flex-direction: column;
+}
+
+.videotxt a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.hearpara p{
+    background-color: #fff;
+    /* height: 500px; */
+    border-radius: 16px;
+}
+
+.hearpara{
+    /* height:90%; */
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 23px;
+    display: flex;
+    line-height: 39px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.hearpara p,.student span{
+    font-size: 1.455vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.student{
+    background: #3D68B2;
+    margin: 0 18px;
+    border-radius: 16px;
+    padding: 23px;
+    /* height: 10%; */
+    color: #fff;
 }
 
 @media(max-width:768px) {
@@ -996,5 +1096,19 @@ body {
 
     .swipe_style {
         padding: 0 !important;
+    }
+
+    /* hear it */
+
+    .opensrc{
+        width: 100%;
+        height: auto;
+    }
+    .videotxt .sec-style{
+        flex-wrap: wrap;
+    }
+
+    .hearpara p{
+        height: auto;
     }
 }

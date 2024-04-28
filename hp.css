@@ -28,9 +28,9 @@ body {
 }
 
 .shine {
-    width: 433px;
+    width: 835px;
     height: 68px;
-    margin-left: -71px;
+    margin-left: -133px;
     transform: rotate(30deg);
     background: -webkit-linear-gradient(top, transparent, rgba(200, 200, 200, 0.1), transparent);
     position: absolute;
@@ -40,11 +40,11 @@ body {
 @-webkit-keyframes shine {
 
     0%, 100% {
-        margin-top: -183px;
+        margin-top: -300px;
     }
 
     50% {
-        margin-top: 303px;
+        margin-top: 500px;
     }
 }
 

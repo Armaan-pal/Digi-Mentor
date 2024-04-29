@@ -8,9 +8,6 @@ body {
 }
 
 .explore_card{
-
-    /* background:-webkit-linear-gradient(top,rgba(255,255,255,0.1),transparent);
-    box-shadow: inset 5px 5px 20px rgba(255,255,255,0.1); */
     -webkit-animation: shimmy 3s ease-in-out infinite;
     overflow: hidden;
   }
@@ -82,70 +79,70 @@ body {
 }
 
 #lineh1 {
-    position: fixed; /* Use fixed positioning to keep the line moving down the whole page */
-    top: 0; /* Start at the top of the page */
+    position: fixed;
+    top: 0; 
     left: 10%;
-    width: 2px; /* Width of the line */
-    height: 10vh; /* Define the height of the line as the full height of the viewport */
-    background: #F26231; /* Set the line color */
-    animation: lineH 3s 1s infinite linear; /* Animation duration, delay, and type */
+    width: 2px; 
+    height: 9vh;
+    background: #f2623180;
+    animation: lineH 6s 1s infinite linear;
     z-index: 9;
 }
 
 #lineh2 {
-    position: fixed; /* Use fixed positioning to keep the line moving down the whole page */
-    top: 0; /* Start at the top of the page */
-    left: 25%;
-    width: 2px; /* Width of the line */
-    height: 10vh; /* Define the height of the line as the full height of the viewport */
-    background: #F26231; /* Set the line color */
-    animation: lineH 2s 2s infinite linear; /* Animation duration, delay, and type */
+    position: fixed;
+    top: 0; 
+    left: 36%;
+    width: 2px; 
+    height: 9vh;
+    background: #f2623180;
+    animation: lineH 6s 2s infinite linear;
     z-index: 9;
 }
 
-#lineh3 {
-    position: fixed; /* Use fixed positioning to keep the line moving down the whole page */
-    top: 0; /* Start at the top of the page */
+/* #lineh3 {
+    position: fixed;
+    top: 0; 
     left: 40%;
-    width: 2px; /* Width of the line */
-    height: 10vh; /* Define the height of the line as the full height of the viewport */
-    background: #F26231; /* Set the line color */
-    animation: lineH 3s 3s infinite linear; /* Animation duration, delay, and type */
+    width: 2px; 
+    height: 10vh;
+    background: #F26231;
+    animation: lineH 6s 3s infinite linear;
     z-index: 9;
-}
+} */
 
 #lineh4 {
-    position: fixed; /* Use fixed positioning to keep the line moving down the whole page */
-    top: 0; /* Start at the top of the page */
-    left: 75%;
-    width: 2px; /* Width of the line */
-    height: 10vh; /* Define the height of the line as the full height of the viewport */
-    background: #F26231; /* Set the line color */
-    animation: lineH 2s 1s infinite linear; /* Animation duration, delay, and type */
+    position: fixed;
+    top: 0; 
+    left: 60%;
+    width: 2px; 
+    height: 9vh;
+    background: #f2623180;
+    animation: lineH 6s 3s infinite linear;
     z-index: 9;
 }
 
 #lineh5 {
-    position: fixed; /* Use fixed positioning to keep the line moving down the whole page */
-    top: 0; /* Start at the top of the page */
-    left: 90%;
-    width: 2px; /* Width of the line */
-    height: 10vh; /* Define the height of the line as the full height of the viewport */
-    background: #F26231; /* Set the line color */
-    animation: lineH 3s 1s infinite linear; /* Animation duration, delay, and type */
+    position: fixed;
+    top: 0; 
+    left: 89%;
+    width: 2px; 
+    height: 9vh;
+    background: #f2623180;
+    animation: lineH 6s 4s infinite linear;
     z-index: 9;
 }
 
-#lineh6 {
-    position: fixed; /* Use fixed positioning to keep the line moving down the whole page */
-    top: 0; /* Start at the top of the page */
+/* #lineh6 {
+    position: fixed;
+    top: 0; 
     left: 59%;
-    width: 2px; /* Width of the line */
-    height: 10vh; /* Define the height of the line as the full height of the viewport */
-    background: #F26231; /* Set the line color */
-    animation: lineH 3s 2s infinite linear; /* Animation duration, delay, and type */
+    width: 2px; 
+    height: 10vh;
+    background: #F26231;
+    animation: lineH 6s 2s infinite linear;
     z-index: 9;
-}
+} */
 
 .hear_txt{
     font-size: 2.485vw;
@@ -153,12 +150,10 @@ body {
 
 @keyframes lineH {
     0% {
-        top: 0; /* Start the line at the top of the page */
-       /* Full opacity at the start */
+        top: 0;
     }
     100% {
-        top: calc(100vh - 10px); /* Move the line down to the bottom of the page, adjust for line height */
-        /* Fade out the line at the end */
+        top: calc(100vh - 10px);
     }
 }
 
@@ -204,7 +199,7 @@ body {
 .digimenu {
     display: flex;
     justify-content: space-between;
-    padding: 26px 0px;
+    padding: 26px 0 0 80px;
 }
 
 .digioptions {
@@ -383,7 +378,7 @@ body {
 
 .head_pd p {
     color: #3d4e81;
-    font-size: 75px;
+    font-size: 4.545vw;
 }
 
 .head_pd span {
@@ -396,12 +391,8 @@ body {
     text-align: left;
 }
 
-/* .swipe_style {
-    padding: 3.421vw 4.211vw;
-} */
-
 .swipe_left_head {
-    padding: 80px 0px 80px 36px;
+    padding: 0px 0px 0px 80px;
     display: flex;
     justify-content: right;
     flex-direction: column;
@@ -433,7 +424,6 @@ body {
     background-color: transparent;
     width: 18.105vw;
     height: 17.053vw;
-    /* perspective: 1000px; */
     border: 3px solid #3d4e81;
     border-radius: 6px;
 }
@@ -444,26 +434,9 @@ body {
     height: auto;
     text-align: left;
     padding: 0 13px;
-    /* transition: transform 0.6s;
-    transform-style: preserve-3d; */
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
-/* .front_card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-} */
-/* 
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-} */
-
 .flip-card-front {
-    /* background-color: #bbb; */
     color: black;
 }
 
@@ -473,9 +446,7 @@ body {
 }
 
 .flip-card-back {
-    /* background-color: #2980b9; */
     color: white;
-    /* transform: rotateY(180deg); */
     justify-content: center;
     display: flex;
     padding-top:23px;
@@ -489,8 +460,6 @@ body {
 .card_box {
     display: flex;
     gap: 56px;
-    /* justify-content: center;
-    gap: 2.158vw; */
     margin: 4.379vw 0;
 }
 
@@ -523,7 +492,6 @@ body {
     flex-direction: column;
     align-items: center;
     background: black;
-    /* padding: 3.421vw 4.211vw; */
 }
 
 .btnstyle {
@@ -607,13 +575,13 @@ body {
 
 @keyframes flipCard {
     0% {
-        transform: rotateY(0deg); /* Start with no rotation */
+        transform: rotateY(0deg);
     }
     50% {
-        transform: rotateY(180deg); /* Flip the card halfway */
+        transform: rotateY(180deg);
     }
     100% {
-        transform:rotateY(360deg); /* Complete one full flip */
+        transform:rotateY(360deg);
     }
 }
 
@@ -639,9 +607,6 @@ body {
     align-items: center;
 }
 
-/* .whydigimentor {
-    padding: 3.421vw 4.211vw;
-} */
 
 .medaltxt,
 .googleicontxt {
@@ -753,14 +718,13 @@ body {
 
 .explore_program {
     background-color: #000;
-    /* padding: 3.421vw 4.211vw; */
 }
 
 .exlore_card_box {
     display: flex;
     justify-content: center;
     gap: 2.158vw;
-    padding: 0 0 2.579vw 0;
+    padding: 0 0 4.579vw 0;
 }
 
 .percent_heading {
@@ -816,10 +780,6 @@ body {
     height: auto;
 }
 
-/* .crd_img img{
-    width:100%;
-    height: auto;
-} */
 .program_subsection-head {
     color: #fff;
     font-size: 2.485vw;
@@ -898,7 +858,6 @@ body {
 
 .logo {
     text-align: center;
-    /* padding: 3.421vw 4.211vw; */
     padding: 80px 0;
 }
 
@@ -926,8 +885,6 @@ body {
     margin: 43px 0;
 }
 
-
-
 .greenlogo img,
 .googleicon img {
     width: 100%;
@@ -943,10 +900,8 @@ body {
 
 .opensrc{
     width: 270px;
-    /* height: 663px;  */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .opensrc video{
@@ -993,12 +948,10 @@ body {
 
 .hearpara p{
     background-color: #fff;
-    /* height: 500px; */
     border-radius: 16px;
 }
 
 .hearpara{
-    /* height:90%; */
     background-color: #fff;
     border-radius: 16px;
     padding: 23px;
@@ -1006,6 +959,14 @@ body {
     line-height: 39px;
     letter-spacing: 1px;
     word-spacing: 3px;
+}
+
+.hear_txt h2{
+    font-size: 2.485vw;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
 }
 
 .hearpara p,.student span{
@@ -1021,7 +982,6 @@ body {
     margin: 0 18px;
     border-radius: 16px;
     padding: 23px;
-    /* height: 10%; */
     color: #fff;
 }
 
@@ -1156,10 +1116,6 @@ body {
         font-size: 29px;
     }
 
-    .whydigimentor {
-        /* padding: 30px; */
-    }
-
     /* foot-style */
 
     .para_and_ttl {
@@ -1208,7 +1164,7 @@ body {
         font-size: 9px;
     }
 
-    /*  */
+    /* Explore section */
 
     .exlore_card_box {
         display: block;
@@ -1336,6 +1292,5 @@ body {
     .videotxt_btn{
         font-size: 13Px;
     }
-
 
 }

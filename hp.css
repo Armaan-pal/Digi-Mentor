@@ -7,6 +7,12 @@ body {
     padding: 80px 80px;
 }
 
+@media (min-width:1600px){
+    .digioptions a{
+        font-size: 1.25vw;
+    }
+}
+
 .explore_card{
     -webkit-animation: shimmy 3s ease-in-out infinite;
     overflow: hidden;
@@ -199,12 +205,32 @@ body {
 .digimenu {
     display: flex;
     justify-content: space-between;
-    padding: 26px 0 0 80px;
+    padding: 40px 80px 0 80px;
+}
+
+.mob_optns{
+    display: none;
 }
 
 .digioptions {
     display: flex;
-    gap: 13px;
+    gap: 26px;
+}
+
+.digioptions a{
+    text-decoration: none;
+    color: #4b4b4b;
+    font-size: 1.48vw;
+    height: max-content;
+}
+
+.sitelogo{
+
+}
+
+.sitelogo img{
+    width:100%;
+    height: auto;
 }
 
 /* foot-css */
@@ -343,7 +369,6 @@ body {
 .swipe_btn {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .bgcollght {
@@ -375,9 +400,12 @@ body {
     display: flex;
 }
 
-.swipe_left_head,
+.swipe_left_head{
+    width: 46%;
+}
+
 .swipe_right_head {
-    width: 50%;
+    width: 40%;
 }
 
 .head_pd p {
@@ -387,7 +415,7 @@ body {
 
 .head_pd span {
     color: #F26231;
-    font-size: 75px;
+    font-size:5.51vw;
     font-weight: 600;
 }
 
@@ -397,7 +425,7 @@ body {
 }
 
 .swipe_left_head {
-    padding: 0px 0px 0px 80px;
+    padding-left: 106px;
     display: flex;
     justify-content: right;
     flex-direction: column;
@@ -1013,6 +1041,11 @@ body {
 
     .head_pd {
         padding: 0  33px 0 33px;
+        margin-bottom: 0;
+    }
+
+    .mob_optns{
+        display: block;
     }
 
     .page-width {
@@ -1256,6 +1289,13 @@ body {
         font-size: 19px;
     }
 
+    .swipe_right_head {
+        width: 100%;
+    }
+    .swipe_btn{
+        justify-content: center;
+    }
+
     .head_pd span {
         font-size: 20px;
     }
@@ -1354,6 +1394,10 @@ body {
 
     .bgcolorng {
         margin-left: 16px;
+    }
+
+    .digioptions a{
+        display: none;
     }
 
 }

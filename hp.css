@@ -224,10 +224,6 @@ body {
     height: max-content;
 }
 
-.sitelogo{
-
-}
-
 .sitelogo img{
     width:100%;
     height: auto;
@@ -1046,6 +1042,15 @@ body {
 
     .mob_optns{
         display: block;
+        height: fit-content;
+    }
+
+    .digimenu{
+        flex-direction: row-reverse;
+    }
+
+    .digioptions{
+        height: fit-content;
     }
 
     .page-width {
@@ -1400,9 +1405,22 @@ body {
         display: none;
     }
 
+    .sitelogo {
+        width: 123px;
+    }
+
+    .mob_optns svg{
+        width: 19px;
+        height: 19px;
+    }
+
 }
 
-@media (max-width: 330px) {
+@media (max-width: 340px) {
+
+    .bannre_txt-btn {
+        font-size: 11px;
+    }
 
     .swipe_btn{
         justify-content: center;
@@ -1424,8 +1442,8 @@ body {
         gap: 3px;
     }
     svg{
-        width: 9px;
-    height: 9px; 
+        width: 10px;
+    height: 10px; 
     }
 
     .confused_lnk div{

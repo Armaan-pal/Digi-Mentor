@@ -1404,6 +1404,10 @@ body {
 
 @media (max-width: 330px) {
 
+    .swipe_btn{
+        justify-content: center;
+    }
+
     .bgcolorng {
         margin-left: 13px;
     }

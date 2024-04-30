@@ -145,7 +145,7 @@ body {
 } */
 
 .hear_txt{
-    font-size: 2.485vw;
+    font-size: 3.015vw;
 }
 
 @keyframes lineH {
@@ -218,8 +218,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding: 60px;
+    padding: 80px;
 }
 
 .footer-row .footer-col h4 {
@@ -241,13 +240,13 @@ body {
 
 .footer-col .links li {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .footer-col .links li a {
     text-decoration: none;
     color: #bfbfbf;
-    font-size: 0.97vw;
+    font-size: 1.176vw;
 }
 
 .year p{
@@ -264,8 +263,8 @@ body {
 .footer-col p {
     margin: 20px 0 30px 0;
     color: #bfbfbf;
-    font-size: 0.97vw;
-    max-width: 300px;
+    font-size: 1.176vw;
+    /* max-width: 300px; */
 }
 
 .footer-col form {
@@ -287,6 +286,10 @@ body {
 
 .footer-col input::placeholder {
     color: #ccc;
+}
+
+.para_and_ttl p{
+    width: 33.5vw;
 }
 
 .footer-col form button {
@@ -340,6 +343,7 @@ body {
 .swipe_btn {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .bgcollght {
@@ -364,7 +368,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px
+    font-size: 1.103vw;
 }
 
 .slide_style {
@@ -378,7 +382,7 @@ body {
 
 .head_pd p {
     color: #3d4e81;
-    font-size: 4.545vw;
+    font-size: 5.515vw;
 }
 
 .head_pd span {
@@ -389,6 +393,7 @@ body {
 
 .head_pd {
     text-align: left;
+    margin-bottom: 26px;
 }
 
 .swipe_left_head {
@@ -423,7 +428,7 @@ body {
 .front_card {
     background-color: transparent;
     width: 18.105vw;
-    height: 17.053vw;
+    height: auto;
     border: 3px solid #3d4e81;
     border-radius: 6px;
 }
@@ -433,7 +438,7 @@ body {
     width: auto;
     height: auto;
     text-align: left;
-    padding: 0 13px;
+    padding: 0 23px;
 }
 
 .flip-card-front {
@@ -442,7 +447,7 @@ body {
 
 .flip-card-front p {
     color: #F26231;
-    font-size: 1.455vw;
+    font-size: 1.765vw;
 }
 
 .flip-card-back {
@@ -454,7 +459,7 @@ body {
 }
 
 .flip-card-back {
-    font-size: 1.212vw;
+    font-size: 1.471vw;
 }
 
 .card_box {
@@ -478,12 +483,12 @@ body {
 }
 
 .secard_head h3 {
-    font-size: 1.212vw;
+    font-size: 1.471vw;
     font-weight: 300;
 }
 
 .secard_head h2 {
-    font-size: 2.485vw;
+    font-size: 3.015vw;
     font-weight: 400;
 }
 
@@ -507,7 +512,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.909vw;
+    font-size: 1.103vw;
 }
 
 /* digimentor */
@@ -534,14 +539,14 @@ body {
 }
 
 .digimentor_head h2 {
-    font-size: 2.485vw;
+    font-size: 3.015vw;
     color: #3D68B2;
     font-weight: 400;
 }
 
 .digimentor_head h3 {
     color: #4B4B4B;
-    font-size: 1.212vw;
+    font-size: 1.471vw;
     font-weight: 400;
 }
 
@@ -556,14 +561,14 @@ body {
     margin: 0 0 1px 0;
     padding: 0px 23px 3px 23px;
     color: #F26231;
-    font-size: 1.455vw;
+    font-size: 1.765vw;
 }
 
 .card_text p {
     padding: 0px 23px;
     color: #4B4B4B;
-    font-size: 0.97vw;
-    line-height: 21px;
+    font-size: 1.176vw;
+    line-height: unset;
     word-spacing: 3px;
 }
 
@@ -631,7 +636,7 @@ body {
 }
 
 .googleicontxt p {
-    font-size: 30px;
+    font-size: 2.206vw;
     color: #cfcb13;
     margin-top: 9px;
     font-weight: 600
@@ -645,7 +650,7 @@ body {
 }
 
 .medaltxt p {
-    font-size: 30px;
+    font-size: 2.206vw;
     color: #80cf80;
     margin-top: 9px;
     font-weight: 600;
@@ -684,7 +689,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.909vw;
+    font-size: 1.103vw;
     gap: 13px;
 }
 
@@ -694,6 +699,7 @@ body {
 .bannre_txt-btn,
 .videotxt_btn {
     gap: 13px;
+    text-transform: uppercase;
 }
 
 .card_why-btn {
@@ -728,24 +734,24 @@ body {
 }
 
 .percent_heading {
-    font-size: 1.455vw;
+    font-size: 1.765vw;
     color: #3d68b2;
     font-weight: 600;
 }
 
 .crd_prcnt_para p {
-    font-size: 0.97vw;
+    font-size: 1.176vw;
 }
 
 .percent_head p {
     color: #F26231;
     font-weight: bold;
-    font-size: 4.121vw;
+    font-size: 5vw;
 }
 
-.crd_prcnt_para {
+/* .crd_prcnt_para {
     line-height: 19px;
-}
+} */
 
 .subtxt_prcnt {
     display: flex;
@@ -765,12 +771,12 @@ body {
 
 .explore_card span {
     margin-top: 13.939vw;
-    font-size: 1.212vw;
+    font-size: 1.471vw;
 }
 
 .explore_card h2 {
     text-align: left;
-    font-size: 2.485vw;
+    font-size: 3.015vw;
     margin: 0;
 }
 
@@ -782,7 +788,7 @@ body {
 
 .program_subsection-head {
     color: #fff;
-    font-size: 2.485vw;
+    font-size: 3.015vw;
     font-weight: 400;
     text-align: center;
     margin: 2.97vw;
@@ -832,7 +838,7 @@ body {
     font-size: 41px;
 }
 .hdng_span p{
-    font-size: 30px;
+    font-size: 2.206vw;
 }
 
 .confused_lnk {
@@ -848,7 +854,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 0.909vw;
+    font-size: 1.103vw;
     text-decoration: none;
 }
 
@@ -858,7 +864,7 @@ body {
 
 .logo {
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 80px;
 }
 
 .logo_box {
@@ -874,7 +880,7 @@ body {
 }
 
 .logo h2 {
-    font-size: 2.485vw;
+    font-size: 3.015vw;
     font-weight: 400;
     color: #3d68b2;
     padding-bottom: 53px;
@@ -899,7 +905,7 @@ body {
 }
 
 .opensrc{
-    width: 270px;
+    width: 19.853vw;                            
     display: flex;
     flex-direction: column;
 }
@@ -911,11 +917,9 @@ body {
 
 .videotxt .sec-style{
     display: flex;
-    justify-content: center;
-    gap: 26px;
+    justify-content: space-between;
     height: auto;
-    margin: 4.3vw 0;
-    margin-bottom: 6.3vw;
+    margin: 3.3vw 0;
 }
 
 .videotxt_btn{
@@ -932,7 +936,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.909vw;
+    font-size: 1.103vw;
 }
 
 .videotxt{
@@ -962,7 +966,7 @@ body {
 }
 
 .hear_txt h2{
-    font-size: 2.485vw;
+    font-size: 3.015vw;
     color: #fff;
     text-align: center;
     margin: 0;
@@ -970,33 +974,59 @@ body {
 }
 
 .hearpara p,.student span{
-    font-size: 1.455vw;
+    font-size: 1.471vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.student span{
+    font-size: 1.103vw;
+}
+
 .student{
     background: #3D68B2;
     margin: 0 18px;
     border-radius: 16px;
-    padding: 23px;
+    padding: 13px;
     color: #fff;
+}           
+
+.hearpara{
+    height: 30.882vw;
+    line-height: 23px;
+    padding: 0 23px;
 }
 
 @media(max-width:768px) {
+
+    .slide_style{
+        flex-direction: column-reverse;
+        padding-bottom: 33px;
+    }
+
+    .swipe_left_head{
+        width:100%;
+        padding: 0;
+    }
+
+    .head_pd {
+        padding: 0  33px 0 33px;
+    }
 
     .page-width {
         padding: 33px;
     }
 
     .bannre_txt-btn {
-        display: none;
+        font-size: 13px;
+        padding: 9px;
+        gap: 0px;
     }
 
     .confused {
-        gap: 19px;
+        gap: 33px;
         flex-direction: column;
         padding: 30px 0px;
     }
@@ -1004,7 +1034,7 @@ body {
     .card_box {
         flex-direction: column;
         align-items: center;
-        gap: 23px;
+        gap: 33px;
         margin: 33px 0px;
     }
 
@@ -1020,8 +1050,14 @@ body {
         font-size: 13px;
     }
 
-    .confused_lnk {
-        font-size: 13px
+    .confused_lnk{
+        font-size: 13px;
+        padding:9px;
+    }
+
+    .confused_lnk div{
+        display: flex;
+        gap: 13px;
     }
 
     .hdng_span span {
@@ -1036,6 +1072,7 @@ body {
 
     .flip-card-back{
         font-size: 13px;
+        padding-top: 13px;
     }
 
     .btnstyle {
@@ -1053,7 +1090,7 @@ body {
     }
 
     .logo h2{
-        font-size: 19px;
+        font-size: 26px;
     }
 
     .logo {
@@ -1066,7 +1103,7 @@ body {
     }
 
     .secard_head h2 {
-        font-size: 23px;
+        font-size: 26px;
     }
 
     .secard_head h3 {
@@ -1090,7 +1127,7 @@ body {
     }
 
     .card_text h2 {
-        font-size: 18px;
+        font-size: 19px;
         padding: 0px 23px 6px 23px;
     }
 
@@ -1100,6 +1137,7 @@ body {
 
     .card_text p {
         font-size: 13px;
+        line-height: 19px;
     }
 
     .digimentor_head {
@@ -1113,10 +1151,18 @@ body {
     }
 
     .digimentor_head h2 {
-        font-size: 29px;
+        font-size: 26px;
     }
 
     /* foot-style */
+
+    .footer-col .links li{
+        font-size: 6px;
+    }
+
+    .footer-col .links {
+        margin-top: 16px;
+    }
 
     .para_and_ttl {
         display: flex;
@@ -1136,7 +1182,7 @@ body {
     }
 
     .footer .footer-row {
-        padding: 20px;
+        padding: 33px;
         gap: 0;
     }
 
@@ -1218,7 +1264,8 @@ body {
         line-height: unset;
         word-spacing: unset;
         width: auto;
-        font-size: 9px;
+        font-size: 13px;
+        margin: 23px 0;
     }
 
     .explore_card h2 {
@@ -1226,10 +1273,10 @@ body {
     }
 
     .program_subsection-head {
-        font-size: 19px;
+        font-size: 26px;
         text-align: center;
-        margin: 30px;
-        margin-bottom: 23px;
+        margin: 33px 0;
+        margin-bottom: 26px;
     }
 
     .explore_card span {
@@ -1267,10 +1314,6 @@ body {
         width: 93%;
     }
 
-    .swipe_style {
-        padding: 0 !important;
-    }
-
     /* hear it */
 
     .opensrc{
@@ -1293,4 +1336,75 @@ body {
         font-size: 13Px;
     }
 
+    .hear_txt h2{
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .opensrc{
+        margin-bottom: 33px;
+    }
+
+    .para_and_ttl p {
+        width: auto;
+    }
+    .hearpara {
+        height: 489px;
+    }
+
+    .bgcolorng {
+        margin-left: 16px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .bgcolorng {
+        margin-left: 13px;
+    }
+
+    .program_subsection-head {
+        margin: 43px 0;
+        margin-bottom: 30px;
+    }
+
+    .btnstyle, .txtbtndc, .confused_lnk, .bannre_txt-btn, .videotxt_btn{
+        font-size: 9px;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+    svg{
+        width: 9px;
+    height: 9px; 
+    }
+
+    .confused_lnk div{
+        gap: 6px;
+    }
+
+    .secard_head h2, .digimentor_head h2, .program_subsection-head, .logo h2, .hear_txt h2{
+        font-size: 19px;
+    }
+
+    .secard_head h3, .flip-card-back, .digimentor_head h3,.explore_card span, .percent_heading, .crd_prcnt_para p {
+        font-size: 11px;
+    }
+
+    .flip-card-front p, .card_text h2, .explore_card h2 {
+        font-size: 16px;
+    }
+    .flip-card-inner{
+        padding: 23px;
+    }
+
+    .card_text p {
+        font-size: 11px;
+        line-height: normal;
+    }
+
+    .explore_card {
+        gap: 50px;
+    }
 }

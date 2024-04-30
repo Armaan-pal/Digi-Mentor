@@ -343,7 +343,6 @@ body {
 .swipe_btn {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .bgcollght {
@@ -1359,6 +1358,10 @@ body {
 }
 
 @media (max-width: 330px) {
+
+    .swipe_btn{
+        justify-content: center;
+    }
 
     .bgcolorng {
         margin-left: 13px;

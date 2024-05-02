@@ -207,6 +207,16 @@ body {
     justify-content: space-between;
     padding: 40px 80px 0 80px;
 }
+ 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    background: #fff;
+    z-index: 9;
+    align-items: center;
+    padding-bottom: 40px;
+  }
 
 .mob_optns{
     display: none;
@@ -1057,6 +1067,10 @@ body {
         padding: 33px;
     }
 
+    .sticky {
+        padding: 19px 33px;
+    }
+
     .bannre_txt-btn {
         font-size: 13px;
         padding: 9px;
@@ -1194,12 +1208,9 @@ body {
 
     /* foot-style */
 
-    .footer-col .links li{
-        font-size: 6px;
-    }
-
     .footer-col .links {
         margin-top: 16px;
+        padding: 0;
     }
 
     .para_and_ttl {
@@ -1237,15 +1248,16 @@ body {
     }
 
     .footer-row .footer-col h4{
-        font-size: 13px;
+        padding-left: 0;
+        font-size: 16px;
     }
 
     .footer-col p{
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .footer-col .links li a{
-        font-size: 9px;
+        font-size: 13px;
     }
 
     /* Explore section */
@@ -1365,6 +1377,7 @@ body {
         width: 100%;
         height: auto;
     }
+
     .videotxt .sec-style{
         flex-wrap: wrap;
     }
@@ -1410,8 +1423,12 @@ body {
     }
 
     .mob_optns svg{
-        width: 19px;
-        height: 19px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .year p {
+        font-size: 13px;
     }
 
 }
@@ -1472,5 +1489,10 @@ body {
 
     .explore_card {
         gap: 50px;
+    }
+
+    .mob_optns svg{
+        width: 25px;
+        height: 25px;
     }
 }

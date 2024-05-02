@@ -356,6 +356,9 @@ body {
 
 /* banner */
 
+.sec-style .swiper-slide {
+    background: transparent;
+}
 .swiper-slide {
     text-align: center;
     font-size: 18px;

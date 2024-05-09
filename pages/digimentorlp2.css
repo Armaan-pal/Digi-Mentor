@@ -1,0 +1,494 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.faq_heading_and_accordian, .learn_lp2, .lp2-roadmap {
+    background-image: url('/Assets/pattern.png')
+  }
+
+/* timeline */
+
+.time-line-box {
+    width: 100%;
+    background-color: #000;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.time-line-box .timeline {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    text-align: center;
+}
+
+.time-line-box h2 {
+    text-align: center;
+}
+
+.time-line-box .timestamp {
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-line-box .status {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #F26231;
+    position: relative;
+    transition: all 200ms ease-in;
+}
+
+.time-line-box .status span {
+    padding: 29px 0;
+}
+
+.time-line-box .status span:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #F26231;
+    border-radius: 12px;
+    border: 3px solid #455EFC;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease-in;
+}
+
+.swiper-container {
+    width: 95%;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.swiper-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    overflow-y: auto;
+    justify-content: center;
+}
+
+.swiper-container::-webkit-scrollbar-track {
+    background: #a8a8a8b6;
+}
+
+.swiper-container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.timestamp span {
+    padding: 29px 0;
+}
+
+.swiper-container::-webkit-scrollbar-thumb {
+    background: #4F4F4F !important;
+}
+
+.swiper-slidet {
+    text-align: center;
+    font-size: 19px;
+    width: 19vw;
+    height: 100%;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.page-width {
+    padding: 80px 80px;
+}
+
+/* font size */
+
+.mdm .mdmhead,
+.frquntl_askd_qustn,
+.lp_roadmap_head h2,
+.time-line-box h2, .learn_lp2 h2 {
+    font-size: 3.015vw;
+    font-weight: 400;
+    margin-bottom: 4.3vw;
+}
+
+.frquntl_askd_qustn {
+    color: #3D68B2;
+}
+
+/* roadmap Faq */
+
+.lp2-roadmap .card_text {}
+
+.lp_roadmap_head h2 {
+    margin-bottom: 0;
+    text-align: center;
+    color: #3D68B2;
+}
+
+.lp_roadmap_head span {
+    color: #F26231;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 0px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.176vw;
+    color: #000;
+}
+
+.more_question {
+    margin-top: 13px;
+}
+
+.bulletslp1 {
+    font-size: 1.176vw;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #fff;
+    line-height: unset;
+    word-spacing: 3px;
+}
+
+.bulltesarrow {
+    background: #000
+}
+
+.mainheading {
+    color: white;
+}
+
+.pd_para {
+    color: #fff;
+    margin-top: 13px;
+    word-spacing: 3px;
+}
+
+.button-6 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background: #000;
+    color: #fff;
+}
+
+.heading_and_accordian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ha-left h2 {
+    font-size: 18px;
+    color: #000;
+}
+
+.ha-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-6:hover {
+    transform: translateY(-1px);
+}
+
+.button-6:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.queanscontainer {
+    width: 50%;
+    max-width: 600px;
+    margin: 50px 0;
+    margin-top: 0;
+}
+
+.faq button.accordion {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 13px;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 9px;
+    align-items: baseline;
+}
+
+button.accordion:after {
+    font-family: FontAwesome;
+    content: "\f150";
+    font-family: "fontawesome";
+    font-size: 18px;
+    float: right;
+}
+
+button.accordion.is-open:after {
+    content: "\f151";
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background: #000;
+    color: #fff;
+}
+
+.accordion-content {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+/* roadmap */
+
+.lp2digimentor_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.316vw;
+    row-gap: 4.6vw;
+    margin: 4.3vw 0px;
+    margin-bottom: 0;
+}
+
+.lp2digimentor_card .card_text h2 {
+    margin: 0 0 6px 0;
+    padding: 0;
+    color: #3D68B2;
+    ;
+    font-size: 1vw;
+}
+
+.lp2digimentor_card button.accordion:hover,
+button.accordion.is-open {
+    border-color: unset;
+    box-shadow: unset;
+    background: transparent;
+    color: #000;
+}
+
+.lp2digimentor_card button {
+    color: #000;
+}
+
+.lp2digimentor_card button.accordion::after {
+    color: #F26231;
+}
+
+/* mdm */
+
+.mdm {
+    text-align: center;
+    background: #000;
+}
+
+.mdm h2 {
+    color: #fff;
+}
+
+.mdd_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.mdm_card {
+    background: #fff;
+    border-top-right-radius: 39px;
+    border-bottom-left-radius: 39px;
+    width: 31.61vw;
+    height: 17vw;
+    padding: 0 10px;
+}
+
+.mdm_card p {
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+.mdm_card h2 {
+    font-size: 2.4vw;
+}
+
+.mdd_cards h2 {
+    color: #F26231
+}
+
+/* tools you will learn */
+
+.learn_logo img{
+    width: 100%;
+    height: auto;
+}
+
+.learn_logo{
+    width: 83px;
+}
+
+.learn_img_brand{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 160px;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn_lp2 h2{
+    text-align: center;
+    color: #3D68B2;
+}
+
+@media(max-width:768px) {
+    .queanscontainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mdm .mdmhead,
+    .frquntl_askd_qustn,
+    .lp_roadmap_head h2,
+    .time-line-box h2, .learn_lp2 h2{
+        font-size: 19px;
+        margin-bottom: 43px;    
+    }
+
+    .learn_logo {
+        width: 43px;
+      }
+      .learn_img_brand{
+        gap: 23px;
+      }    
+
+      /* Roadmap */
+
+      .accordion-content{
+        padding: 0;
+      }
+
+      .accordion-content p{
+        width: 100%;
+        margin: 0;
+      }
+
+      .lp2digimentor_card{
+        margin: 0;
+      }
+
+      .flip-card-front p, .card_text h2, .explore_card h2 {
+        font-size: 16px;
+      }
+
+      .lp2digimentor_card .card_text h2,.lp2digimentor_card button {
+        font-size: 13px;
+      }
+      
+      /* Master Digital Marketing */
+
+      .mdd_cards{
+        flex-wrap: wrap;
+      }
+
+      .mdm_card{
+        width: 159px;
+        height: 132px;
+      }
+
+      .mdm_card h2 {
+        font-size: 23px;
+      }         
+
+      .mdm_card p{
+        font-size: 13px;
+      }
+
+      /* timeline */
+
+      .swiper-slidet{
+        font-size: 6px;
+      }
+
+      .time-line-box .status span::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #F26231;
+        border-radius: 12px;
+        border: 2px solid #455EFC;
+        position: absolute;
+        left: 50%;
+        top: -2%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all 200ms ease-in;
+      }
+      
+      .time-line-box .status span, .timestamp span{
+        padding: 23px 0;
+      }
+
+      .time-line-box .timestamp{
+        padding: 0;
+        margin: 0;
+      }
+}

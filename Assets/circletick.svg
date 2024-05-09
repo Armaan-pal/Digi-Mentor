@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f26231"/>
+      <stop offset="1" stop-color="#3d68b2"/>
+    </linearGradient>
+    <clipPath id="clip-circletick">
+      <rect width="54" height="54"/>
+    </clipPath>
+  </defs>
+  <g id="circletick" clip-path="url(#clip-circletick)">
+    <g id="Group_97" data-name="Group 97" transform="translate(-413 -1265)">
+      <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(413 1265)" fill="#fff" stroke="#f26231" stroke-width="3">
+        <circle cx="27" cy="27" r="27" stroke="none"/>
+        <circle cx="27" cy="27" r="25.5" fill="none"/>
+      </g>
+      <path id="Union_3" data-name="Union 3" d="M11.335,22.314A1.816,1.816,0,0,1,10,21.775L.95,12.665a1.848,1.848,0,0,1,0-2.6,1.819,1.819,0,0,1,2.586,0l7.8,7.854L28.192.953a1.821,1.821,0,0,1,2.586,0,1.849,1.849,0,0,1,0,2.6l-18.1,18.22a1.818,1.818,0,0,1-1.293.539Z" transform="translate(424.136 1280.636)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

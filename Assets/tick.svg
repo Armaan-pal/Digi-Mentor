@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="14" viewBox="0 0 19 14">
+  <defs>
+    <clipPath id="clip-tick">
+      <rect width="19" height="14"/>
+    </clipPath>
+  </defs>
+  <g id="tick" clip-path="url(#clip-tick)">
+    <g id="Group_98" data-name="Group 98" transform="translate(-418.944 -1274.359)">
+      <path id="Union_3" data-name="Union 3" d="M5.452,13.869-.414,7.95a1.477,1.477,0,0,1,.313-2,1.453,1.453,0,0,1,1.99-.311l4.39,4.43,9.616-9.7a1.4,1.4,0,0,1,1.912.323,1.428,1.428,0,0,1,.325,1.924L7.854,12.981a2.149,2.149,0,0,1-.412.576,1.866,1.866,0,0,1-1.275.588A.983.983,0,0,1,5.452,13.869Z" transform="translate(419.63 1274.214)" fill="#f26231"/>
+    </g>
+  </g>
+</svg>

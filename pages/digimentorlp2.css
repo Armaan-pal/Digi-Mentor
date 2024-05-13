@@ -7,6 +7,27 @@ body {
     background-image: url('/Assets/pattern.png')
   }
 
+  .aplnw_btn {
+    background: linear-gradient(90deg, rgba(61, 104, 178, 1) 11%, rgba(242, 98, 49, 0.9640056706276261) 89%);
+    width: fit-content;
+    padding: 3px 3px;
+    border-radius: 33px;
+  }
+
+  .aplnw_btn p{
+    padding: 9px 26px;
+  background: #fff;
+  margin: 0;
+  border-radius: 33px;
+  }
+
+  .lp2_txt_btnapply h2{
+    margin-bottom: 0 !important;
+  }
+
+.aplnw_btn a{
+    text-decoration: none;
+}
 /* timeline */
 
 .time-line-box {
@@ -71,12 +92,12 @@ body {
     overflow-y: auto;
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
     display: inline-flex;
     flex-direction: row;
     overflow-y: auto;
     justify-content: center;
-}
+} */
 
 .swiper-container::-webkit-scrollbar-track {
     background: #a8a8a8b6;
@@ -112,7 +133,7 @@ body {
 .mdm .mdmhead,
 .frquntl_askd_qustn,
 .lp_roadmap_head h2,
-.time-line-box h2, .learn_lp2 h2 {
+.time-line-box h2, .learn_lp2 h2, .lp2_txt_btnapply h2{
     font-size: 3.015vw;
     font-weight: 400;
     margin-bottom: 4.3vw;
@@ -131,6 +152,12 @@ body {
     text-align: center;
     color: #3D68B2;
 }
+
+.flx {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+  }
 
 .lp_roadmap_head span {
     color: #F26231;

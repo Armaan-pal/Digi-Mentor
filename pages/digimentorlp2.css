@@ -3,31 +3,38 @@ body {
     margin: 0;
 }
 
-.faq_heading_and_accordian, .learn_lp2, .lp2-roadmap {
+.faq_heading_and_accordian,
+.learn_lp2,
+.lp2-roadmap {
     background-image: url('/Assets/pattern.png')
-  }
+}
 
-  .aplnw_btn {
+.aplnw_btn {
     background: linear-gradient(90deg, rgba(61, 104, 178, 1) 11%, rgba(242, 98, 49, 0.9640056706276261) 89%);
     width: fit-content;
     padding: 3px 3px;
     border-radius: 33px;
-  }
+}
 
-  .aplnw_btn p{
+.aplnw_btn p {
     padding: 9px 26px;
-  background: #fff;
-  margin: 0;
-  border-radius: 33px;
-  }
+    background: #fff;
+    margin: 0;
+    border-radius: 33px;
+}
 
-  .lp2_txt_btnapply h2{
+.lp2_txt_btnapply h2 {
     margin-bottom: 0 !important;
-  }
+}
 
-.aplnw_btn a{
+.aplnw_btn a {
     text-decoration: none;
 }
+
+.stylflx .swiper-slide {
+    width: 113px;
+}
+
 /* timeline */
 
 .time-line-box {
@@ -133,7 +140,9 @@ body {
 .mdm .mdmhead,
 .frquntl_askd_qustn,
 .lp_roadmap_head h2,
-.time-line-box h2, .learn_lp2 h2, .lp2_txt_btnapply h2{
+.time-line-box h2,
+.learn_lp2 h2,
+.lp2_txt_btnapply h2 {
     font-size: 3.015vw;
     font-weight: 400;
     margin-bottom: 4.3vw;
@@ -157,7 +166,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 26px;
-  }
+}
 
 .lp_roadmap_head span {
     color: #F26231;
@@ -403,24 +412,24 @@ button.accordion.is-open {
 
 /* tools you will learn */
 
-.learn_logo img{
+.learn_logo img {
     width: 100%;
     height: auto;
 }
 
-.learn_logo{
+.learn_logo {
     width: 83px;
 }
 
-.learn_img_brand{
+.learn_img_brand {
     display: flex;
-  flex-wrap: wrap;
-  gap: 160px;
-  justify-content: center;
-  align-items: center;
+    flex-wrap: wrap;
+    gap: 160px;
+    justify-content: center;
+    align-items: center;
 }
 
-.learn_lp2 h2{
+.learn_lp2 h2 {
     text-align: center;
     color: #3D68B2;
 }
@@ -434,67 +443,85 @@ button.accordion.is-open {
     .mdm .mdmhead,
     .frquntl_askd_qustn,
     .lp_roadmap_head h2,
-    .time-line-box h2, .learn_lp2 h2{
+    .time-line-box h2,
+    .learn_lp2 h2 {
         font-size: 19px;
-        margin-bottom: 43px;    
+        margin-bottom: 43px;
+    }
+
+    .lp2txt_slid {
+        flex-direction: column;
+    }
+
+    .lp2_txt_btnapply {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .stylflx {
+        width: 100% !important;
     }
 
     .learn_logo {
         width: 43px;
-      }
-      .learn_img_brand{
+    }
+
+    .learn_img_brand {
         gap: 23px;
-      }    
+    }
 
-      /* Roadmap */
+    /* Roadmap */
 
-      .accordion-content{
+    .accordion-content {
         padding: 0;
-      }
+    }
 
-      .accordion-content p{
+    .accordion-content p {
         width: 100%;
         margin: 0;
-      }
+    }
 
-      .lp2digimentor_card{
+    .lp2digimentor_card {
         margin: 0;
-      }
+    }
 
-      .flip-card-front p, .card_text h2, .explore_card h2 {
+    .flip-card-front p,
+    .card_text h2,
+    .explore_card h2 {
         font-size: 16px;
-      }
+    }
 
-      .lp2digimentor_card .card_text h2,.lp2digimentor_card button {
+    .lp2digimentor_card .card_text h2,
+    .lp2digimentor_card button {
         font-size: 13px;
-      }
-      
-      /* Master Digital Marketing */
+    }
 
-      .mdd_cards{
+    /* Master Digital Marketing */
+
+    .mdd_cards {
         flex-wrap: wrap;
-      }
+    }
 
-      .mdm_card{
+    .mdm_card {
         width: 159px;
         height: 132px;
-      }
+    }
 
-      .mdm_card h2 {
+    .mdm_card h2 {
         font-size: 23px;
-      }         
+    }
 
-      .mdm_card p{
+    .mdm_card p {
         font-size: 13px;
-      }
+    }
 
-      /* timeline */
+    /* timeline */
 
-      .swiper-slidet{
+    .swiper-slidet {
         font-size: 6px;
-      }
+    }
 
-      .time-line-box .status span::before {
+    .time-line-box .status span::before {
         content: '';
         width: 6px;
         height: 6px;
@@ -508,14 +535,16 @@ button.accordion.is-open {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         transition: all 200ms ease-in;
-      }
-      
-      .time-line-box .status span, .timestamp span{
-        padding: 23px 0;
-      }
+    }
 
-      .time-line-box .timestamp{
+    .time-line-box .status span,
+    .timestamp span {
+        padding: 23px 0;
+    }
+
+    .time-line-box .timestamp {
         padding: 0;
         margin: 0;
-      }
+    }
+    
 }

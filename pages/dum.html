@@ -2,218 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- Demo styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Slider</title>
     <style>
-        .swiper {
-            width: 100%;
-            height: 100%;
+        .showcase {
+            width: 200px; /* Adjust to the width of your images */
+            height: 400px; /* Adjust to show multiple images at a time */
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
         }
 
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-
-        .swiper {
-            width: 100%;
-            height: 300px;
-            margin: 20px 0;
-        }
-
-        .stylflx {
-            display: flex;
-        }
-
-        .stylflx {
-            width: 50%;
-        }
-
-        .lp2txt_slid {
-            display: flex;
-            width: 100%;
-            padding: 80px 0px 80px 0px;
-        }
-
-        .lp2_txt_btnapply {
+        .slider {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            width: 50%;
-            padding: 80px 0 80px 80px;
+            animation: scroll 15s linear infinite;
+        }
+
+        .item {
+            width: 100%;
+            height: 200px; /* Adjust to the height of your images */
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 100%;
+            opacity: 1;
+        }
+
+        /* .item:hover img {
+            opacity: 1.0;
+        } */
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        @media(max-width:768px) {
+            .showcase {
+            width: 800px; /* Adjust to show multiple images at a time */
+            height: 200px; /* Adjust to the height of your images */
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            flex-direction: row;
+            width: max-content; /* Ensure the slider width adjusts to its content */
+            animation: scroll 20s linear infinite;
+        }
+
+        .item {
+            width: 200px; /* Adjust to the width of your images */
+            height: 100%; /* Adjust to the height of your images */
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 100%;
+            opacity: 1;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
         }
     </style>
 </head>
 
 <body>
-    <!-- Swiper -->
-    <div class="lp2txt_slid">
-
-        <div class="lp2_txt_btnapply">
-            <h2>Become a Full Stack <br> <span style="color:#3D68B2">Digital</span> <span
-                    style="color:#F26231">Marketer</span> In <br> Just 6 Months.</h2>
-            <p>Master all essential Digital Marketing skils to drive results and <br> stay ahead in today's competitive
-                landscape.</p>
-        </div>
-
-        <div class="stylflx">
-
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 1.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 2.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 3.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 4.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 5.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 6.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 7.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 8.png" alt=""></div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 9.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 10.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 11.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 12.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 13.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 14.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 15.png" alt=""></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 16.png" alt=""></div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="swiper mySwiper3">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 17.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 18.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 19.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 20.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 21.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 22.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 23.png" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 3.png" alt=""></div>
-                    </div>
-
-                </div>
-            </div>
-
+    <div class="showcase">
+        <div class="slider">
+            <div class="item"><img src="/Assets/Client logos/1 (1).png" alt="" /></div>
+            <div class="item"><img src="/Assets/Client logos/3 (1).png" alt="" /></div>
+            <div class="item"><img src="/Assets/Client logos/4 (1).png" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <!-- Duplicate the items for seamless scroll -->
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
+            <div class="item"><img src="https://source.unsplash.com/random?1=2" alt="" /></div>
         </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-        var swiperr31 = new Swiper(".mySwiper", {
-            direction: "vertical",
-            spaceBetween: 60,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            slidesPerView: 5.5,
+        document.addEventListener("DOMContentLoaded", function () {
+            var slider = document.querySelector('.slider');
+            var sizeImage = 200; // Height of the image
+            var items = slider.children.length;
+            var itemsHeight = items * sizeImage;
+            slider.style.height = itemsHeight + 'px';
 
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 5.5,
-            direction: "vertical",
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            spaceBetween: 60,
+            var rotating = true;
+            var sliderSpeed = 20000; // Adjust speed in milliseconds
+            var seeItems = setInterval(rotateSlider, sliderSpeed);
 
-        });
-        var swiper3 = new Swiper(".mySwiper3", {
-            slidesPerView: 5.5,
-            direction: "vertical",
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            spaceBetween: 60,
+            document.querySelector('.showcase').addEventListener('mouseenter', function () {
+                rotating = false; // turn off rotation when hovering
+            });
 
+            document.querySelector('.showcase').addEventListener('mouseleave', function () {
+                rotating = true;
+            });
+
+            function rotateSlider() {
+                if (rotating) {
+                    var first = slider.querySelector('.item:first-child');
+                    first.style.transition = 'margin-top 1s linear';
+                    first.style.marginTop = '-' + sizeImage + 'px';
+                    first.addEventListener('transitionend', function () {
+                        first.style.transition = '';
+                        first.style.marginTop = '0px';
+                        slider.appendChild(first);
+                    }, { once: true });
+                } else {
+                    var first = slider.querySelector('.item:first-child');
+                    var computedStyle = window.getComputedStyle(first);
+                    var marginTop = parseInt(computedStyle.marginTop, 10);
+                    first.style.transition = '';
+                    first.style.marginTop = marginTop + 'px';
+                }
+            }
         });
     </script>
 </body>

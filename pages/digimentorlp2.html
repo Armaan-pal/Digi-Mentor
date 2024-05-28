@@ -40,7 +40,6 @@
         .swiper {
             width: 100%;
             height: 700px;
-            margin: 20px 0;
         }
 
         .stylflx {
@@ -62,6 +61,96 @@
             padding: 0px 0 80px 80px;
             color: #fff;
         }
+
+        .showcase {
+            width: 100%;
+            height: 703px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .sideslider {
+            display: flex;
+            gap: 60px;
+        }
+
+        .slider {
+            display: flex;
+            flex-direction: column;
+            animation: scroll 15s linear infinite;
+        }
+
+        .item {
+            width: 76%;
+            height: auto;
+            margin-bottom: 26px;
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 100%;
+            opacity: 1;
+        }
+
+        /* .item:hover img {
+            opacity: 1.0;
+        } */
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        .rev {
+            display: flex;
+            flex-direction: column;
+            animation: ver 15s linear infinite;
+        }
+
+
+        @keyframes ver {
+            0% {
+                transform: translateY(-50%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width:768px) {
+            .showcase {
+            width: 800px; /* Adjust to show multiple images at a time */
+            height: 200px; /* Adjust to the height of your images */
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            flex-direction: row;
+            width: max-content; /* Ensure the slider width adjusts to its content */
+            animation: scroll 20s linear infinite;
+        }
+
+        .item {
+            width: 200px; /* Adjust to the width of your images */
+            height: 100%; /* Adjust to the height of your images */
+        }
+        .sideslider{
+            flex-direction: column;
+        }
+    }
+
+
     </style>
 </head>
 
@@ -78,53 +167,53 @@
                     style="color:#F26231">Marketer</span> In <br> Just 6 Months.</h2>
             <p>Master all essential Digital Marketing skils to drive results and <br> stay ahead in today's competitive
                 landscape.</p>
-                <div class="flx" style="display: block;">
-                    <div class="aplnw_btn"><a href="#">
-                            <p style="background: #000;">Apply now</p>
-                        </a></div>
-                </div>
+            <div class="flx" style="display: block;">
+                <div class="aplnw_btn"><a href="#">
+                        <p style="background: #000;">Apply now</p>
+                    </a></div>
+            </div>
         </div>
 
         <div class="stylflx">
-
+            <!-- 
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 1.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/1 (1).png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 2.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/3 (1).png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 3.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/4 (1).png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 4.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/5 (1).png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 5.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/6 (1).png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 6.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/7.png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 7.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/8.png" alt=""></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="lp2slid"><img src="/Assets/Client logos/logo 8.png" alt=""></div>
+                        <div class="lp2slid"><img src="/Assets/Client logos/9.png" alt=""></div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="swiper mySwiper2">
+            <div dir="rtl" class="swiper mySwiper2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="lp2slid"><img src="/Assets/Client logos/logo 9.png" alt=""></div>
@@ -188,6 +277,49 @@
                     </div>
 
                 </div>
+            </div> -->
+
+
+            <div class="sideslider">
+
+                <div class="showcase">
+                    <div class="slider">
+                        <div class="item"><img src="/Assets/Client logos/1 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/6 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/7.png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/8.png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/3 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/4 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/5 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/9.png" alt="" /></div>
+                    </div>
+                </div>
+
+                <div class="showcase">
+                    <div class="slider  rev">
+                        <div class="item"><img src="/Assets//Client logos/5 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/6 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/7.png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/8.png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/1 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/3 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/4 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/9.png" alt="" /></div>
+                    </div>
+                </div>
+
+                <div class="showcase">
+                    <div class="slider">
+                        <div class="item"><img src="/Assets/Client logos/4 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/5 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/6 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/1 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets/Client logos/3 (1).png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/7.png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/8.png" alt="" /></div>
+                        <div class="item"><img src="/Assets//Client logos/9.png" alt="" /></div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -232,6 +364,7 @@
 
     <!-- Master Digital Marketing -->
     <div class="mdm page-width">
+
         <h2 class="mdmhead">Here's What You Need TO <br> Master Digital Markeeting</h2>
         <div class="mdd_cards">
             <div class="mdm_card">
@@ -682,6 +815,48 @@
             },
             spaceBetween: 60,
 
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var slider = document.querySelector('.slider');
+            var sizeImage = 200; // Height of the image
+            var items = slider.children.length;
+            var itemsHeight = items * sizeImage;
+            slider.style.height = itemsHeight + 'px';
+
+            var rotating = true;
+            var sliderSpeed = 20000; // Adjust speed in milliseconds
+            var seeItems = setInterval(rotateSlider, sliderSpeed);
+
+            document.querySelector('.showcase').addEventListener('mouseenter', function () {
+                rotating = false; // turn off rotation when hovering
+            });
+
+            document.querySelector('.showcase').addEventListener('mouseleave', function () {
+                rotating = true;
+            });
+
+            function rotateSlider() {
+                if (rotating) {
+                    var first = slider.querySelector('.item:first-child');
+                    first.style.transition = 'margin-top 1s linear';
+                    first.style.marginTop = '-' + sizeImage + 'px';
+                    first.addEventListener('transitionend', function () {
+                        first.style.transition = '';
+                        first.style.marginTop = '0px';
+                        slider.appendChild(first);
+                    }, { once: true });
+                } else {
+                    var first = slider.querySelector('.item:first-child');
+                    var computedStyle = window.getComputedStyle(first);
+                    var marginTop = parseInt(computedStyle.marginTop, 10);
+                    first.style.transition = '';
+                    first.style.marginTop = marginTop + 'px';
+                }
+            }
         });
     </script>
 </body>
